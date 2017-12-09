@@ -11,4 +11,10 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+      - run:
+          name: Install Dependencies
+          command: sudo apt install gcc && sudo apt install make
+      - run:
+	  name: Compile
+	  command: make
 
