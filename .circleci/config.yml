@@ -11,6 +11,6 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
-      - run: sudo apt install gcc && sudo apt install make
+      - run: apt install gcc && apt install make
       - run: make
 
