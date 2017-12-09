@@ -3,10 +3,6 @@ jobs:
   build:
     docker:
       - image: debian:stretch
-    dependencies:
-      pre:
-        - sudo apt-get update; sudo apt-get install gcc
-        - sudo apt-get update; sudo apt-get install make
     steps:
       - checkout
       - run:
@@ -15,5 +11,6 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+      - run: sudo apt-get update; sudo apt-get install gcc; sudo apt-get install make
       - run: make
 
