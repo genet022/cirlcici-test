@@ -15,4 +15,4 @@ jobs:
           name: Print the Current Time
           command: date
       - run: make
-      - run: ./test.sh
+      - run: chmod 777 test.sh; ./test.sh
