@@ -15,6 +15,4 @@ jobs:
           name: Print the Current Time
           command: date
       - run: make
-      - run:
-	  name: Test1
-          command: ./test.sh
+      - run: ./test.sh
